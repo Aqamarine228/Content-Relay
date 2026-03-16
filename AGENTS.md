@@ -1,0 +1,27 @@
+- Project name: Content-Relay Landing
+- Purpose: public marketing and legal site for developer API approval
+- Scope: static landing website only; no auth, dashboard, or backend app logic in this repo
+- External application: all login and dashboard actions redirect to `process.env.NEXT_PUBLIC_APP_URL`
+- Represent a lightweight social media scheduling platform for creators and teams
+- Supported platforms: TikTok, Instagram, YouTube
+- Required routes: `/`, `/terms`, `/privacy`
+- Landing page must include hero, features, supported platforms, how it works, product explanation, and footer legal links
+- Legal pages must be production-ready because they support platform review
+- Use Next.js, React, and TailwindCSS
+- Target AWS Amplify deployment
+- Keep the site static-hosting compatible
+- Use Next.js static export
+- Do not add a custom backend server
+- All CTA buttons must redirect to the external application
+- Use only `NEXT_PUBLIC_APP_URL` for login, dashboard, and CTA destinations
+- If `NEXT_PUBLIC_APP_URL` is missing, fail clearly in development instead of silently linking to a placeholder
+- Keep the UI minimal, modern, responsive, and mobile friendly
+- Preserve a clean SaaS landing-page structure
+- Prefer simple reusable sections and shared layout primitives
+- Keep copy aligned with developer review goals: product clarity, supported platforms, and legal compliance
+- Place legal content on dedicated routes rather than modals
+- Centralize repeated external URL logic in a small helper
+- Avoid adding dependencies unless they directly help the landing site
+- Expected build flow: `npm install` then `npm run build`
+- Ensure the app remains compatible with static export
+- Do not commit generated output or dependency directories

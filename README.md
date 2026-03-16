@@ -7,13 +7,14 @@ Copy `.env.example` and set the external application URL:
 ```bash
 NEXT_PUBLIC_APP_URL=https://app.content-relay.com
 ```
+Bare domains such as `postiz.content-relay.com` are also accepted and will be normalized to `https://postiz.content-relay.com`.
 ```bash
 npm install
 npm run dev
 ```
 AWS Amplify can build and host the exported static site with:
 ```bash
-npm install
+npm ci
 npm run build
 ```
-The generated static output is written to `out/`.
+The build artifacts are read from `.next/` by Amplify.

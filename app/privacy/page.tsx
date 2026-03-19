@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Content-Relay Privacy Policy',
+  description: 'Privacy Policy for the Content-Relay social media scheduling application and public marketing site.'
+};
 const sections = [
   {
     title: 'Data Collection',
@@ -28,7 +34,7 @@ export default function PrivacyPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-ocean">Privacy Policy</p>
         <h1 className="text-4xl font-semibold text-ink">How Content-Relay handles website, integration, and publishing data.</h1>
         <p className="text-lg leading-8 text-ink/70">
-          This policy describes data handling for the public site and the connected external application used for social media scheduling.
+          This Privacy Policy applies to the Content-Relay app and the public Content-Relay website used to describe its social media scheduling service.
         </p>
       </div>
       <div className="mt-8 space-y-6">

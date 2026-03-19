@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Content-Relay Terms of Service',
+  description: 'Terms of Service for the Content-Relay social media scheduling application and public marketing site.'
+};
 const sections = [
   {
     title: 'Acceptance of Terms',
@@ -32,7 +38,7 @@ export default function TermsPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-ocean">Terms of Service</p>
         <h1 className="text-4xl font-semibold text-ink">Terms for the public Content-Relay website and connected publishing platform.</h1>
         <p className="text-lg leading-8 text-ink/70">
-          These terms explain how the public site, review materials, and connected publishing workflows should be used.
+          These Terms of Service apply to the Content-Relay app and the public Content-Relay website, including review materials and connected publishing workflows.
         </p>
       </div>
       <div className="mt-8 space-y-6">
